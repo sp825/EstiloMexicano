@@ -6,129 +6,137 @@
     padding: 0;
 }
 
-.navbar {
-    display: flex;
-    width: 100%;
+#header {
+    display: flex; 
     align-items: center;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 20px 80px;
     background-color: black;
-    position: absolute;
-    margin: 0;
-    margin-left: -680px;
-}
-body {
-    font-family: 'Bodoni Moda', serif;
-    margin: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
 }
 
-.nav { 
-    flex: 1;
-    text-align: right;
-    width: auto;
-    list-style: none;
-}
-.nav ul {
-    display: inline-block;
-    list-style-type: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
-
-nav li {
-  display: inline-block; /* Makes list items sit next to each other */
-  /* OR */
-  /* float: left; */ /* Floats items to the left */
-  margin-right: 20px; /* Optional: Add spacing */
-}
-
-.nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-a { 
-   text-decoration: none;
-   color: white;
-}
-
-nav a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #333;
-  background-color: #f0f0f0;
-}
-
-nav a:hover {
-  background-color: #ddd;
-}
-
-p {
-  color: white;  
-}
-.container {
-   width: 1200px;
-    margin-left:auto;
-    margin-right:auto;
-   margin:auto;
-   padding-left: 25px;
-   padding-right: 25px;
-}
-.row {
+#navbar{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover{
+    color: darkgrey;
+}
+
+#hero{
+    padding: 0 80px; 
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    background-image: url(images/Screenshot%202025-10-07%20133437.png);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero h2{
+    color: red;
+}
+#hero h1{
+    color: red;
+}
+
+#hero button{
     background-color: red;
     color: white;
-    margin-left: -680px;
-}
-.col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col-2 img {
-   min-width: 100px; 
-   padding: 50px 0;
-   border-radius: 25%;
-}
-.col-2 h1 {
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-}
-.btn {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 8px 30px;
-    margin: 30px 0;
+    border: 0;
+    padding: 14px 80px 14px 65px;
     border-radius: 30px;
-    transition: background 0.5s
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
 }
-.btn:hover {
-    background-color: white;
-    color: black;
+
+#hero button:hover {
+  background-color: black; 
+  color: red;
 }
-.header .row {
-    margin-top: 70px;
+
+#product1 {
+   text-align: center;
 }
-.catergories {
-    margin: 70px 0px;
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid;
+    border-radius: 25px;    
+    cursor: pointer;
+    margin: 15px 0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
 }
-.col-3{ 
-    flex-basis: 25%;
-    min-width: 200px;
-    margin-bottom: 50px;
-    padding: 10px;
+
+#product1 .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
-.col-3 img {
+
+#product1 .pro img{
     width: 100%;
+    border-radius: 20px;
 }
-.small-container{ 
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+
+#product1 .pro .des{
+    text-align: center;
+    padding: 10px 0; 
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#aboutus{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid;
+    border-radius: 25px;    
+    margin: 15px 0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    justify-content: center;
+}
+
+#aboutus h2{
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    background-color: black;
+    position: sticky;
+    top: 100vh;
 }
