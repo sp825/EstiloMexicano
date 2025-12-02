@@ -43,7 +43,7 @@
 
 #hero{
     padding: 0 80px; 
-    height: 90vh;
+    height: 700px;
     width: 100%;
     background-position: top 25% right 0;
     background-size: cover;
@@ -61,7 +61,7 @@
     color: red;
 }
 
-#hero button{
+.button{
     background-color: red;
     color: white;
     border: 0;
@@ -74,7 +74,7 @@
     transition: background-color 0.3s ease;
 }
 
-#hero button:hover {
+.button:hover {
   background-color: black; 
   color: red;
 }
@@ -125,6 +125,8 @@
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     transition: 0.2s ease;
     justify-content: center;
+    background-color: black;
+    color: white;
 }
 
 #aboutus h2{
@@ -139,4 +141,94 @@ footer {
     background-color: black;
     position: sticky;
     top: 100vh;
+}
+
+#page-header{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    color: white;
+    background-color: red;
+}
+
+#about{
+    padding: 50px;
+}
+
+#about .box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#about .img{
+    margin-right: 40px;
+    object-fit: cover;
+}
+
+#about .details{
+    width: 50%;
+    text-align: left;
+}
+
+#page-sales{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    color: white;
+    background-color: red;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+#form-details form span{
+    font-size: 12px;
+}
+
+#form-details form h2{
+    font-size: 26px; 
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button{
+    background-color: red;
+    color: white;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+#form-details form button:hover{
+  background-color: black; 
+  color: red;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 80px; border: 1px solid #e1e1e1;
 }
